@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Script sql proyecto")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ad84dc096d53121626696111e91e3cf7af81b67")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+38675c753044be00371fcc506ff87534a38f7b35")]
 [assembly: System.Reflection.AssemblyProductAttribute("Script sql proyecto")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Script sql proyecto")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
