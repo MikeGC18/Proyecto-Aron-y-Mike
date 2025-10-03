@@ -1,0 +1,17 @@
+C:\Users\mrobe\OneDrive\Documentos\DAW 2\Script sql proyecto\bin\Debug\net8.0\Script sql proyecto.exe
+C:\Users\mrobe\OneDrive\Documentos\DAW 2\Script sql proyecto\bin\Debug\net8.0\Script sql proyecto.deps.json
+C:\Users\mrobe\OneDrive\Documentos\DAW 2\Script sql proyecto\bin\Debug\net8.0\Script sql proyecto.runtimeconfig.json
+C:\Users\mrobe\OneDrive\Documentos\DAW 2\Script sql proyecto\bin\Debug\net8.0\Script sql proyecto.dll
+C:\Users\mrobe\OneDrive\Documentos\DAW 2\Script sql proyecto\bin\Debug\net8.0\Script sql proyecto.pdb
+C:\Users\mrobe\OneDrive\Documentos\DAW 2\Script sql proyecto\bin\Debug\net8.0\System.Data.SQLite.dll
+C:\Users\mrobe\OneDrive\Documentos\DAW 2\Script sql proyecto\obj\Debug\net8.0\Script sql proyecto.csproj.AssemblyReference.cache
+C:\Users\mrobe\OneDrive\Documentos\DAW 2\Script sql proyecto\obj\Debug\net8.0\Script sql proyecto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mrobe\OneDrive\Documentos\DAW 2\Script sql proyecto\obj\Debug\net8.0\Script sql proyecto.AssemblyInfoInputs.cache
+C:\Users\mrobe\OneDrive\Documentos\DAW 2\Script sql proyecto\obj\Debug\net8.0\Script sql proyecto.AssemblyInfo.cs
+C:\Users\mrobe\OneDrive\Documentos\DAW 2\Script sql proyecto\obj\Debug\net8.0\Script sql proyecto.csproj.CoreCompileInputs.cache
+C:\Users\mrobe\OneDrive\Documentos\DAW 2\Script sql proyecto\obj\Debug\net8.0\Script s.3D3A2619.Up2Date
+C:\Users\mrobe\OneDrive\Documentos\DAW 2\Script sql proyecto\obj\Debug\net8.0\Script sql proyecto.dll
+C:\Users\mrobe\OneDrive\Documentos\DAW 2\Script sql proyecto\obj\Debug\net8.0\refint\Script sql proyecto.dll
+C:\Users\mrobe\OneDrive\Documentos\DAW 2\Script sql proyecto\obj\Debug\net8.0\Script sql proyecto.pdb
+C:\Users\mrobe\OneDrive\Documentos\DAW 2\Script sql proyecto\obj\Debug\net8.0\Script sql proyecto.genruntimeconfig.cache
+C:\Users\mrobe\OneDrive\Documentos\DAW 2\Script sql proyecto\obj\Debug\net8.0\ref\Script sql proyecto.dll

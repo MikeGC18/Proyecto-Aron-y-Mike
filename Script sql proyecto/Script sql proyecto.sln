@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Script sql proyecto", "Script sql proyecto.csproj", "{72AC3E8F-4A58-616A-153C-5F24361259C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72AC3E8F-4A58-616A-153C-5F24361259C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72AC3E8F-4A58-616A-153C-5F24361259C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72AC3E8F-4A58-616A-153C-5F24361259C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72AC3E8F-4A58-616A-153C-5F24361259C5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F9D6690-5205-4192-B0F0-E087D8179FEF}
+	EndGlobalSection
+EndGlobal

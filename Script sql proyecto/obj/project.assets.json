@@ -1,0 +1,104 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "System.Data.SQLite/2.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/System.Data.SQLite.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/System.Data.SQLite.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "System.Data.SQLite/2.0.2": {
+      "sha512": "yAwxkraZf1PazyLg1sqMAlh4KEtaa2L8zieLicd9oWBybrb3SoPph+WVIyUTFWwtTVhNX/jNsDew6tbB8bw2xQ==",
+      "type": "package",
+      "path": "system.data.sqlite/2.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net471/System.Data.SQLite.dll",
+        "lib/netstandard2.0/System.Data.SQLite.dll",
+        "lib/netstandard2.1/System.Data.SQLite.dll",
+        "system.data.sqlite.2.0.2.nupkg.sha512",
+        "system.data.sqlite.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "System.Data.SQLite >= 2.0.2"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\mrobe\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\mrobe\\OneDrive\\Documentos\\DAW 2\\Script sql proyecto\\Script sql proyecto.csproj",
+      "projectName": "Script sql proyecto",
+      "projectPath": "C:\\Users\\mrobe\\OneDrive\\Documentos\\DAW 2\\Script sql proyecto\\Script sql proyecto.csproj",
+      "packagesPath": "C:\\Users\\mrobe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mrobe\\OneDrive\\Documentos\\DAW 2\\Script sql proyecto\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\mrobe\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "dependencies": {
+          "System.Data.SQLite": {
+            "target": "Package",
+            "version": "[2.0.2, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
