@@ -8,14 +8,14 @@ class Program
     {
         string dbFile = "f1.db";
 
-        // Borrar la BD si existe
+       
         if (File.Exists(dbFile))
         {
             File.Delete(dbFile);
             Console.WriteLine("Base de dades antiga eliminada.");
         }
 
-        // Crear archivo de BD
+  
         SQLiteConnection.CreateFile(dbFile);
         Console.WriteLine("Base de dades creada correctament: " + dbFile);
 
@@ -24,7 +24,7 @@ class Program
             connection.Open();
             Console.WriteLine("Connexió establerta correctament.");
 
-            // Crear tablas
+
             string[] commands = {
                 "DROP TABLE IF EXISTS results;",
                 "DROP TABLE IF EXISTS drivers;",
@@ -69,7 +69,7 @@ class Program
                     FOREIGN KEY (circuitId) REFERENCES circuits(circuitId)
                 );",
 
-                // Inserción de datos
+        
                 @"INSERT INTO circuits (circuitId, name, location, country, lat, lng) VALUES
                     (1, 'Circuit de Barcelona-Catalunya', 'Montmeló', 'Spain', 41.57, 2.26),
                     (2, 'Silverstone Circuit', 'Silverstone', 'United Kingdom', 52.07, -1.01),
@@ -104,7 +104,6 @@ class Program
 
             Console.WriteLine("Taules creades i dades inserides correctament!\n");
 
-            // Mostrar drivers
             Console.WriteLine("== Drivers ==");
             using (var reader = new SQLiteCommand("SELECT driverId, forename, surname, nationality FROM drivers;", connection).ExecuteReader())
             {
@@ -114,7 +113,7 @@ class Program
                 }
             }
 
-            // Mostrar circuits
+         
             Console.WriteLine("\n== Circuits ==");
             using (var reader = new SQLiteCommand("SELECT circuitId, name, country FROM circuits;", connection).ExecuteReader())
             {
@@ -124,7 +123,7 @@ class Program
                 }
             }
 
-            // Mostrar resultados
+       
             Console.WriteLine("\n== Results ==");
             using (var reader = new SQLiteCommand("SELECT resultId, driverId, circuitId, position, points, raceDate FROM results;", connection).ExecuteReader())
             {
