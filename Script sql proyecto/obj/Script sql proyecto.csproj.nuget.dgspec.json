@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mrobe\\OneDrive\\Documentos\\DAW 2\\Script sql proyecto\\Script sql proyecto.csproj": {}
+    "C:\\Users\\mrobe\\OneDrive\\Documentos\\DAW 2\\Proyecto\\Script sql proyecto\\Script sql proyecto.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mrobe\\OneDrive\\Documentos\\DAW 2\\Script sql proyecto\\Script sql proyecto.csproj": {
+    "C:\\Users\\mrobe\\OneDrive\\Documentos\\DAW 2\\Proyecto\\Script sql proyecto\\Script sql proyecto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mrobe\\OneDrive\\Documentos\\DAW 2\\Script sql proyecto\\Script sql proyecto.csproj",
+        "projectUniqueName": "C:\\Users\\mrobe\\OneDrive\\Documentos\\DAW 2\\Proyecto\\Script sql proyecto\\Script sql proyecto.csproj",
         "projectName": "Script sql proyecto",
-        "projectPath": "C:\\Users\\mrobe\\OneDrive\\Documentos\\DAW 2\\Script sql proyecto\\Script sql proyecto.csproj",
+        "projectPath": "C:\\Users\\mrobe\\OneDrive\\Documentos\\DAW 2\\Proyecto\\Script sql proyecto\\Script sql proyecto.csproj",
         "packagesPath": "C:\\Users\\mrobe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mrobe\\OneDrive\\Documentos\\DAW 2\\Script sql proyecto\\obj\\",
+        "outputPath": "C:\\Users\\mrobe\\OneDrive\\Documentos\\DAW 2\\Proyecto\\Script sql proyecto\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mrobe\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -43,9 +43,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "System.Data.SQLite": {
+            "System.Data.SQLite.Core": {
               "target": "Package",
-              "version": "[2.0.2, )"
+              "version": "[1.0.116, )"
             }
           },
           "imports": [

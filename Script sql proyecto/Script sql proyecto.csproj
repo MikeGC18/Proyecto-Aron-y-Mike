@@ -3,13 +3,10 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
-    <RootNamespace>Script_sql_proyecto</RootNamespace>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Data.SQLite" Version="2.0.2" />
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.116" />
   </ItemGroup>
 
 </Project>

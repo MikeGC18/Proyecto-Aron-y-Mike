@@ -2,36 +2,82 @@
   "version": 3,
   "targets": {
     "net8.0": {
-      "System.Data.SQLite/2.0.2": {
+      "Stub.System.Data.SQLite.Core.NetStandard/1.0.116": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.1/System.Data.SQLite.dll": {}
+          "lib/netstandard2.1/System.Data.SQLite.dll": {
+            "related": ".dll.altconfig;.xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.1/System.Data.SQLite.dll": {}
+          "lib/netstandard2.1/System.Data.SQLite.dll": {
+            "related": ".dll.altconfig;.xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/SQLite.Interop.dll": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-x64/native/SQLite.Interop.dll": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-x64/native/SQLite.Interop.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/SQLite.Interop.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "System.Data.SQLite.Core/1.0.116": {
+        "type": "package",
+        "dependencies": {
+          "Stub.System.Data.SQLite.Core.NetStandard": "[1.0.116]"
         }
       }
     }
   },
   "libraries": {
-    "System.Data.SQLite/2.0.2": {
-      "sha512": "yAwxkraZf1PazyLg1sqMAlh4KEtaa2L8zieLicd9oWBybrb3SoPph+WVIyUTFWwtTVhNX/jNsDew6tbB8bw2xQ==",
+    "Stub.System.Data.SQLite.Core.NetStandard/1.0.116": {
+      "sha512": "VEe/vzvn2ECKovtyb+nf8fsnNQ4EYOUms7gnp9729NN7FSR/0v/uVoBDO7DETzV7YCquRVwRnSnYuoOwAoTEKA==",
       "type": "package",
-      "path": "system.data.sqlite/2.0.2",
+      "path": "stub.system.data.sqlite.core.netstandard/1.0.116",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net471/System.Data.SQLite.dll",
         "lib/netstandard2.0/System.Data.SQLite.dll",
+        "lib/netstandard2.0/System.Data.SQLite.dll.altconfig",
+        "lib/netstandard2.0/System.Data.SQLite.xml",
         "lib/netstandard2.1/System.Data.SQLite.dll",
-        "system.data.sqlite.2.0.2.nupkg.sha512",
-        "system.data.sqlite.nuspec"
+        "lib/netstandard2.1/System.Data.SQLite.dll.altconfig",
+        "lib/netstandard2.1/System.Data.SQLite.xml",
+        "runtimes/linux-x64/native/SQLite.Interop.dll",
+        "runtimes/osx-x64/native/SQLite.Interop.dll",
+        "runtimes/win-x64/native/SQLite.Interop.dll",
+        "runtimes/win-x86/native/SQLite.Interop.dll",
+        "stub.system.data.sqlite.core.netstandard.1.0.116.nupkg.sha512",
+        "stub.system.data.sqlite.core.netstandard.nuspec"
+      ]
+    },
+    "System.Data.SQLite.Core/1.0.116": {
+      "sha512": "djwmo97syWCpUPJbDS0e2qUFUa8cDLeIfMotVkaRkAC5gpfBSZLMzvoLkLp1prY8waAuH1jEC3wcB2ymVVQWtA==",
+      "type": "package",
+      "path": "system.data.sqlite.core/1.0.116",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "system.data.sqlite.core.1.0.116.nupkg.sha512",
+        "system.data.sqlite.core.nuspec"
       ]
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "System.Data.SQLite >= 2.0.2"
+      "System.Data.SQLite.Core >= 1.0.116"
     ]
   },
   "packageFolders": {
@@ -40,11 +86,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mrobe\\OneDrive\\Documentos\\DAW 2\\Script sql proyecto\\Script sql proyecto.csproj",
+      "projectUniqueName": "C:\\Users\\mrobe\\OneDrive\\Documentos\\DAW 2\\Proyecto\\Script sql proyecto\\Script sql proyecto.csproj",
       "projectName": "Script sql proyecto",
-      "projectPath": "C:\\Users\\mrobe\\OneDrive\\Documentos\\DAW 2\\Script sql proyecto\\Script sql proyecto.csproj",
+      "projectPath": "C:\\Users\\mrobe\\OneDrive\\Documentos\\DAW 2\\Proyecto\\Script sql proyecto\\Script sql proyecto.csproj",
       "packagesPath": "C:\\Users\\mrobe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mrobe\\OneDrive\\Documentos\\DAW 2\\Script sql proyecto\\obj\\",
+      "outputPath": "C:\\Users\\mrobe\\OneDrive\\Documentos\\DAW 2\\Proyecto\\Script sql proyecto\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mrobe\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -76,9 +122,9 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
-          "System.Data.SQLite": {
+          "System.Data.SQLite.Core": {
             "target": "Package",
-            "version": "[2.0.2, )"
+            "version": "[1.0.116, )"
           }
         },
         "imports": [
