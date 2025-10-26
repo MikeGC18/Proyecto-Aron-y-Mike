@@ -3640,11 +3640,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mrobe\\OneDrive\\Documentos\\DAW 2\\Proyecto definitivo\\F1Api\\F1Api.csproj",
+      "projectUniqueName": "C:\\Users\\mrobe\\OneDrive\\Documentos\\DAW 2\\Proyecto\\Proyecto definitivo\\F1Api\\F1Api.csproj",
       "projectName": "F1Api",
-      "projectPath": "C:\\Users\\mrobe\\OneDrive\\Documentos\\DAW 2\\Proyecto definitivo\\F1Api\\F1Api.csproj",
+      "projectPath": "C:\\Users\\mrobe\\OneDrive\\Documentos\\DAW 2\\Proyecto\\Proyecto definitivo\\F1Api\\F1Api.csproj",
       "packagesPath": "C:\\Users\\mrobe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mrobe\\OneDrive\\Documentos\\DAW 2\\Proyecto definitivo\\F1Api\\obj\\",
+      "outputPath": "C:\\Users\\mrobe\\OneDrive\\Documentos\\DAW 2\\Proyecto\\Proyecto definitivo\\F1Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mrobe\\AppData\\Roaming\\NuGet\\NuGet.Config"

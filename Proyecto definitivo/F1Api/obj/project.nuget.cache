@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O5NB8Y32QDk=",
+  "dgSpecHash": "snGEVf3V7UY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mrobe\\OneDrive\\Documentos\\DAW 2\\Proyecto definitivo\\F1Api\\F1Api.csproj",
+  "projectFilePath": "C:\\Users\\mrobe\\OneDrive\\Documentos\\DAW 2\\Proyecto\\Proyecto definitivo\\F1Api\\F1Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mrobe\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\mrobe\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.8\\microsoft.aspnetcore.openapi.8.0.8.nupkg.sha512",

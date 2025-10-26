@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Conexión a SQLite
+
 builder.Services.AddDbContext<Fm1Context>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("F1Connection")));
 

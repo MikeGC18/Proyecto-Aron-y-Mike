@@ -16,16 +16,15 @@ namespace F1Api.Controladores
             _context = context;
         }
 
-        // GET: api/drivers
         [HttpGet]
         public IActionResult GetDrivers(
-            int? driverId,
-            int? number,
-            string code,
-            string forename,
-            string surname,
-            DateTime? dob,
-            string nationality)
+    [FromQuery] int? driverId,
+    [FromQuery] int? number,
+    [FromQuery] string? code,
+    [FromQuery] string? forename,
+    [FromQuery] string? surname,
+    [FromQuery] string? dob,           // dob com a string
+    [FromQuery] string? nationality)
         {
             var query = _context.Drivers.AsQueryable();
 
@@ -34,12 +33,17 @@ namespace F1Api.Controladores
             if (!string.IsNullOrEmpty(code)) query = query.Where(d => d.Code == code);
             if (!string.IsNullOrEmpty(forename)) query = query.Where(d => d.Forename == forename);
             if (!string.IsNullOrEmpty(surname)) query = query.Where(d => d.Surname == surname);
-            if (dob.HasValue)
-                query = query.Where(d => d.Dob.Date == dob.Value.Date);
+
+            if (!string.IsNullOrEmpty(dob))
+            {
+                query = query.Where(d => d.Dob == dob);  // comparació directa com a string
+            }
+
             if (!string.IsNullOrEmpty(nationality)) query = query.Where(d => d.Nationality == nationality);
 
             return Ok(query.ToList());
         }
+
 
         // POST: api/drivers
         [HttpPost]

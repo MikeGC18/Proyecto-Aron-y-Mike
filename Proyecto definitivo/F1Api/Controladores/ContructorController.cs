@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using F1Api.Data;    // <-- importa el DbContext
+using F1Api.Data;    
 using F1Api.Models;
 
 namespace FM1Api.Controllers
@@ -14,7 +14,7 @@ namespace FM1Api.Controllers
 
         public ConstructorsController(Fm1Context context) => _context = context;
 
-        // GET → consulta de escuderías
+        
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Constructor>>> GetConstructors(
             int? constructorId, string? name, string? nationality)
@@ -28,7 +28,7 @@ namespace FM1Api.Controllers
             return await query.ToListAsync();
         }
 
-        // POST → añadir una escudería nueva
+     
         [HttpPost]
         public async Task<ActionResult<Constructor>> PostConstructor(Constructor constructor, [FromHeader] string? api_key)
         {
@@ -39,7 +39,7 @@ namespace FM1Api.Controllers
             return CreatedAtAction(nameof(GetConstructors), new { id = constructor.ConstructorId }, constructor);
         }
 
-        // PUT → modificar una escudería existente
+      
         [HttpPut("{id}")]
         public async Task<IActionResult> PutConstructor(int id, Constructor constructor, [FromHeader] string? api_key)
         {
@@ -51,7 +51,7 @@ namespace FM1Api.Controllers
             return NoContent();
         }
 
-        // DELETE → eliminar una escudería
+    
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteConstructor(int id, [FromHeader] string? api_key)
         {

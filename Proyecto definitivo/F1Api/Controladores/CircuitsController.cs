@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using F1Api.Data;    // <-- importa el DbContext
+using F1Api.Data;    
 using F1Api.Models;
 
 namespace FM1Api.Controllers
@@ -10,14 +10,13 @@ namespace FM1Api.Controllers
     public class CircuitsController : ControllerBase
     {
         private readonly Fm1Context _context;
-        private const string API_KEY = "TU_API_KEY"; // Cambia esto por tu API_KEY
+        private const string API_KEY = "TU_API_KEY"; 
 
         public CircuitsController(Fm1Context context)
         {
             _context = context;
         }
 
-        // GET → consulta de circuits
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Circuit>>> GetCircuits(
             int? circuitId, string? name, string? location, string? country, double? lat, double? lng)
@@ -34,7 +33,7 @@ namespace FM1Api.Controllers
             return await query.ToListAsync();
         }
 
-        // POST → añadir un circuito nuevo
+        
         [HttpPost]
         public async Task<ActionResult<Circuit>> PostCircuit(Circuit circuit, [FromHeader] string? api_key)
         {
@@ -45,7 +44,7 @@ namespace FM1Api.Controllers
             return CreatedAtAction(nameof(GetCircuits), new { id = circuit.CircuitId }, circuit);
         }
 
-        // PUT → modificar un circuito existente
+      
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCircuit(int id, Circuit circuit, [FromHeader] string? api_key)
         {
@@ -57,7 +56,7 @@ namespace FM1Api.Controllers
             return NoContent();
         }
 
-        // DELETE → eliminar un circuito
+       
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCircuit(int id, [FromHeader] string? api_key)
         {
